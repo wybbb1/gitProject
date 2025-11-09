@@ -52,6 +52,23 @@ int bubbleSort(int arr[], int n) {
     return 0;
 }
 
+// Selection Sort function to sort an array
+int selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // Swap arr[i] and arr[minIndex]
+        int temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+    return 0;
+}
+
 int main() {
     int arr[] = {34, 7, 23, 32, 5, 62};
     int n = sizeof(arr) / sizeof(arr[0]);
