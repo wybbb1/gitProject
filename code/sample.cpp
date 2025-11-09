@@ -77,6 +77,10 @@ void new2(){
     cout << "222" << endl;
 }
 
+void new3(){
+    cout<<"333"<<endl;
+}
+
 int main() {
     int arr[] = {34, 7, 23, 32, 5, 62};
     int n = sizeof(arr) / sizeof(arr[0]);
